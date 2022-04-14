@@ -1,24 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Class22_ios_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="casino-table" translatesAutoresizingMaskIntoConstraints="NO" id="OTr-Hg-PBG">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="UPz-9b-SdJ">
+                                <rect key="frame" x="44" y="0.0" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="5AE-CC-Dx9"/>
+                                    <constraint firstAttribute="width" constant="200" id="KFQ-4E-bGP">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="100"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="wAN-M9-FXp">
+                                <rect key="frame" x="436" y="16" width="400" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roulette" translatesAutoresizingMaskIntoConstraints="NO" id="eJg-eZ-ZI4">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.5" height="80"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roulette" translatesAutoresizingMaskIntoConstraints="NO" id="Guq-hQ-8nn">
+                                        <rect key="frame" x="136.5" y="0.0" width="127" height="80"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roulette" translatesAutoresizingMaskIntoConstraints="NO" id="FnT-rR-sLi">
+                                        <rect key="frame" x="272.5" y="0.0" width="127.5" height="80"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="1op-d8-qyv">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="70"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="80"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="400" id="Blr-ZM-FZS">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="300"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Blr-ZM-FZS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Blr-ZM-FZS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Blr-ZM-FZS"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKe-fz-wOp">
+                                <rect key="frame" x="398" y="112" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="MaE-yN-Xwg"/>
+                                    <constraint firstAttribute="height" constant="100" id="df6-hW-3WG"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="spin_button"/>
+                                <connections>
+                                    <action selector="spinClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gWb-gY-IfJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmE-X3-7ep">
+                                <rect key="frame" x="64" y="313" width="200" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="aiP-h1-r4v"/>
+                                    <constraint firstAttribute="height" constant="80" id="fbm-LO-iHm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="51"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWN-HL-ryc">
+                                <rect key="frame" x="64" y="282.5" width="200" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.5" id="GZ7-2E-D1j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UPz-9b-SdJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1YF-Vp-tjU"/>
+                            <constraint firstItem="KWN-HL-ryc" firstAttribute="centerX" secondItem="HmE-X3-7ep" secondAttribute="centerX" id="37f-Fd-AhB"/>
+                            <constraint firstItem="OTr-Hg-PBG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3qe-3J-3nR"/>
+                            <constraint firstItem="HmE-X3-7ep" firstAttribute="top" secondItem="KWN-HL-ryc" secondAttribute="bottom" constant="10" id="4sa-Om-fPx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wAN-M9-FXp" secondAttribute="trailing" constant="16" id="71S-Q1-o2L"/>
+                            <constraint firstItem="KWN-HL-ryc" firstAttribute="width" secondItem="HmE-X3-7ep" secondAttribute="width" id="7Kq-HE-6jA"/>
+                            <constraint firstItem="wAN-M9-FXp" firstAttribute="top" secondItem="UPz-9b-SdJ" secondAttribute="bottom" constant="16" id="7lr-9I-KL2"/>
+                            <constraint firstItem="UPz-9b-SdJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dc4-Fp-TEW"/>
+                            <constraint firstAttribute="trailing" secondItem="OTr-Hg-PBG" secondAttribute="trailing" id="HhU-dA-9aw"/>
+                            <constraint firstItem="HmE-X3-7ep" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JDS-JS-hZm"/>
+                            <constraint firstAttribute="bottom" secondItem="OTr-Hg-PBG" secondAttribute="bottom" id="O5P-li-5zC"/>
+                            <constraint firstItem="OTr-Hg-PBG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="P0k-Ed-ump"/>
+                            <constraint firstItem="wAN-M9-FXp" firstAttribute="top" secondItem="UPz-9b-SdJ" secondAttribute="bottom" constant="16" id="T9H-tJ-yYW"/>
+                            <constraint firstItem="wAN-M9-FXp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="UIP-bH-T7a"/>
+                            <constraint firstItem="wAN-M9-FXp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Var-xf-7zX"/>
+                            <constraint firstItem="xKe-fz-wOp" firstAttribute="top" secondItem="wAN-M9-FXp" secondAttribute="bottom" constant="16" id="cHB-Ti-x3z"/>
+                            <constraint firstItem="HmE-X3-7ep" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hF0-JG-HYv"/>
+                            <constraint firstItem="UPz-9b-SdJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qpf-HB-hs6"/>
+                            <constraint firstItem="xKe-fz-wOp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xMs-XL-0fT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Dc4-Fp-TEW"/>
+                                <exclude reference="qpf-HB-hs6"/>
+                                <exclude reference="7lr-9I-KL2"/>
+                                <exclude reference="T9H-tJ-yYW"/>
+                                <exclude reference="UIP-bH-T7a"/>
+                                <exclude reference="Var-xf-7zX"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Dc4-Fp-TEW"/>
+                                <include reference="UIP-bH-T7a"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="Dc4-Fp-TEW"/>
+                                <include reference="UIP-bH-T7a"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="qpf-HB-hs6"/>
+                                <include reference="7lr-9I-KL2"/>
+                                <include reference="T9H-tJ-yYW"/>
+                                <include reference="Var-xf-7zX"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="panel_IMG_slot1" destination="eJg-eZ-ZI4" id="Aya-tf-QgU"/>
+                        <outlet property="panel_IMG_slot2" destination="Guq-hQ-8nn" id="82H-jM-Pdy"/>
+                        <outlet property="panel_IMG_slot3" destination="FnT-rR-sLi" id="4Yf-AB-mw1"/>
+                        <outlet property="panel_LBL_score" destination="HmE-X3-7ep" id="vJo-D0-od2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="90"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo" width="2064" height="1204"/>
+        <image name="casino-table" width="1000" height="1500"/>
+        <image name="roulette" width="512" height="512"/>
+        <image name="spin_button" width="240" height="240"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
